@@ -1,0 +1,60 @@
+.page-not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .dora-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-family: "Comic Sans MS", cursive; /* Choose a fun and playful font */
+    font-size: 36px;
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-family: "Comic Sans MS", cursive; /* Same font as h1 */
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cool-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffcc00; /* Yellow */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .cool-button:hover {
+    background-color: #ff9900; /* Darker orange */
+  }
+  
+  .cool-button:active {
+    background-color: #ff5500; /* Even darker orange */
+  }
+  
+  .cool-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.4); /* Orange outline */
+  }
+  
