@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  
+  constructor(private http: HttpClient){
+    this.loadPost();
+
+  }
+
+
+  loadPost(){
+    this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe(
+      (response)=>{
+        alert(JSON.stringify(response));
+    });
+  }
 }
